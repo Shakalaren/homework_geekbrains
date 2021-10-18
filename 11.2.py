@@ -18,5 +18,5 @@ try:
         raise MyOwnErr("Делить на 0 не представляется возможным")
     elif UserInput == "/":
         print(f'Частное {Num1} и {Num2} равняется {Num1 / Num2}')
-except (ValueError, MyOwnErr) as er:
+except (ZeroDivisionError, MyOwnErr) as er:
     print(er)
